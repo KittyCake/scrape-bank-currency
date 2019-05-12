@@ -1,0 +1,22 @@
+<%= form_with(model: daily_exchange_rate, local: true) do |form| %>
+  <% if daily_exchange_rate.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(daily_exchange_rate.errors.count, "error") %> prohibited this daily_exchange_rate from being saved:</h2>
+
+      <ul>
+      <% daily_exchange_rate.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.text_field :date %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

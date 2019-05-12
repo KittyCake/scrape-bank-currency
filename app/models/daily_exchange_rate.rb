@@ -1,0 +1,2 @@
+class DailyExchangeRate < ApplicationRecord
+end

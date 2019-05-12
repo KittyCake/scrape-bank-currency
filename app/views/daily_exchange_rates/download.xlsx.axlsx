@@ -1,0 +1,11 @@
+wb = xlsx_package.workbook
+wb.add_worksheet(name: "Exchanges") do |sheet|
+  sheet.add_row ["日期"]
+  sheet.add_row [@exchanges.first["quotePriceDate"]]
+
+  sheet.add_row ["幣種", "中間價", "匯買價", "匯賣價", "鈔買價", "鈔賣價", "發佈時間"]
+  @exchanges.each do |e|
+    # byebug
+    sheet.add_row [e["curName"], e["midPrice"], e["cstexcBuyPrice"], e["cstexcSellPrice"], e["cstpurBuyPrice"], e["cstpurSellPrice"], e["quotePriceTime"]]
+  end
+end
