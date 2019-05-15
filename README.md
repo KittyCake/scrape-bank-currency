@@ -1,9 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an app for scraping currency rate from CITIC Bank.
 
-Things you may want to cover:
+What you can do:
+1. Save current rate.
+2. Download current rate and export to Excel.
+3. Everyday 09:30 / 10:00 / 10:30, app will automatically save.
+
 
 * Ruby version
 
