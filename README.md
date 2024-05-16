@@ -1,6 +1,6 @@
 # README
 
-This is an app for scraping currency rate from CITIC Bank.
+This is an app for scraping currency rate from bank.
 
 What you can do:
 1. Save current rate.
